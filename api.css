@@ -1,0 +1,184 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#6699CC;
+}
+
+
+.weatherCard{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #5072A7;
+    transition: all .5s ease-in-out;  
+}
+
+.weatherCardActive{
+    width: 600px;
+    height: 500px;
+}
+
+
+.inputndBtn{
+   width: 65%;
+   height: 70px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   transition: all .6s ease-in-out;
+   
+}
+
+
+#in{
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px 15px;
+    border: none;
+    font-size: 20px;
+    font-weight: 200;
+    transition: all .5s ease-in-out;
+}
+
+
+.inActive{
+    transform: translateX(-64px);
+}
+
+
+h2{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+
+.btn{
+    outline: none;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 5px;
+    margin-top: 24px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+
+.btnFlex{
+    transform: translateY(-60px) translateX(150px);
+    margin-top: 21px ;
+}
+
+
+.btn:hover{
+    color: white;
+    background-color: #6699CC;
+}
+
+
+.reports{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 32px;
+    transform: scale(0.0,0.0);
+
+    transition: all ease-in-out .5s; 
+}
+
+
+.reportsActive{
+    transform: scale(1,1);
+}
+
+
+.reports div{
+    display: flex;
+    align-items: center;
+    margin: 8px 40px;
+}
+
+
+.latIcon,
+.lonIcon,
+.maxIcon,
+.minIcon{
+    width: 25px;
+}
+
+
+.latData,
+.lonData,
+.maxData,
+.minData{
+    color: lightgray;
+    font-size: 20px;
+}
+
+
+.wImg{
+    width: 0px;
+    transition: all ease-in-out 1.1s;   
+}
+
+.wImgActive{
+    width: 70px;
+}
+
+.location{
+    color: white;
+    font-size: 0px;
+    transition: all ease-in-out .9s;
+}
+
+.locationActive{
+    font-size: 20px;
+}
+
+/* .errMsg{
+    color: red;
+    font-size: 15px;
+    margin:  10px 0px;
+} */
+
+
+.wData{
+    font-size: 00px;
+    font-weight: 200;
+    color: white;
+    transition: all ease-in-out .7s;
+}
+
+.wDataActive{
+    font-size: 60px;
+}
+
+.rainIcon{
+    font-size: 50px;
+    color: white;
+}
+
+
+
+
