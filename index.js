@@ -129,24 +129,6 @@ btn.addEventListener("click", (e) => {
                 location.classList.add("locationActive")
             }
 
-            // let myArr = ["IN", "FR", "US", "GB", "PH", "SA", "AE", "JP", "ZA"];
-
-            // myArr.forEach((e) => {
-            //     if (data.sys.country !== e) {
-            //         location.innerHTML = `${data.name},${data.sys.country}`
-            //         location.classList.add("locationActive")
-            //     }
-            // })
-
-
-
-
-
-
-            // else {
-            //     errMsg.innerHTML = "";
-            // }
-
 
             let fTemp = Math.floor(data.main.temp - 273.15);
             let hTemp = Math.floor(data.main.temp_max - 273.15);
