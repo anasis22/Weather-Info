@@ -67,7 +67,7 @@ btn.addEventListener("click", (e) => {
             //     wImg.classList.add("wImgActive")
             // }
 
-            wImg.setAttribute("src", "./w.svg");
+            wImg.setAttribute("src", "https://www.svgrepo.com/show/491948/weather-color-moon-cloud-light.svg");
             wImg.classList.add("wImgActive")
 
             //location
