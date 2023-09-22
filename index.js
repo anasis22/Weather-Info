@@ -16,7 +16,7 @@ btn.addEventListener("click", (e) => {
             let location = document.querySelector(".location")
             let date = new Date();
             let timeNow = date.getHours();
-            
+
             console.log(data);
 
 
@@ -28,44 +28,47 @@ btn.addEventListener("click", (e) => {
                 alert('Enter the the valid location to access')
             }
 
-            if (data.weather[0].description === "broken clouds" || data.weather[0].description === "scattered clouds" || data.weather[0].description === "clear sky") {
-                wImg.setAttribute("src", "/Users/anas/Desktop/weatherIcons/dist/icons/black/png/256x256/mostlycloudy.png");
-                wImg.classList.add("wImgActive")
-            }
+            // if (data.weather[0].description === "broken clouds" || data.weather[0].description === "scattered clouds" || data.weather[0].description === "clear sky") {
+            //     wImg.setAttribute("src", "/Users/anas/Desktop/weatherIcons/dist/icons/black/png/256x256/mostlycloudy.png");
+            //     wImg.classList.add("wImgActive")
+            // }
 
-            if (data.weather[0].description === "overcast clouds" || data.weather[0].description === "few clouds") {
-                wImg.setAttribute("src", "/Users/anas/Desktop/weatherIcons/dist/icons/black/png/256x256/cloudy.png");
-                wImg.classList.add("wImgActive")
-            }
+            // if (data.weather[0].description === "overcast clouds" || data.weather[0].description === "few clouds") {
+            //     wImg.setAttribute("src", "/Users/anas/Desktop/weatherIcons/dist/icons/black/png/256x256/cloudy.png");
+            //     wImg.classList.add("wImgActive")
+            // }
 
-            if (data.weather[0].description === "mist") {
-                wImg.setAttribute("src", "/Users/anas/Desktop/weatherIcons/dist/icons/black/png/256x256/fog.png");
-                wImg.classList.add("wImgActive")
-            }
+            // if (data.weather[0].description === "mist") {
+            //     wImg.setAttribute("src", "/Users/anas/Desktop/weatherIcons/dist/icons/black/png/256x256/fog.png");
+            //     wImg.classList.add("wImgActive")
+            // }
 
-            if (data.weather[0].description === "thunderstorm with light rain") {
-                wImg.setAttribute("src", "/Users/anas/Desktop/weatherIcons/dist/icons/black/png/256x256/tstorms.png");
-                wImg.classList.add("wImgActive")
-            }
+            // if (data.weather[0].description === "thunderstorm with light rain") {
+            //     wImg.setAttribute("src", "/Users/anas/Desktop/weatherIcons/dist/icons/black/png/256x256/tstorms.png");
+            //     wImg.classList.add("wImgActive")
+            // }
 
-            if (data.weather[0].description === "light rain" || data.weather[0].description === "moderate rain" || data.weather[0].main === "Rain" || data.weather[0].main === "Drizzle") {
-                wImg.setAttribute("src", "/Users/anas/Desktop/weatherIcons/dist/icons/black/png/256x256/chancerain.png");
-                wImg.classList.add("wImgActive")
-            }
+            // if (data.weather[0].description === "light rain" || data.weather[0].description === "moderate rain" || data.weather[0].main === "Rain" || data.weather[0].main === "Drizzle") {
+            //     wImg.setAttribute("src", "/Users/anas/Desktop/weatherIcons/dist/icons/black/png/256x256/chancerain.png");
+            //     wImg.classList.add("wImgActive")
+            // }
 
-            if (data.weather[0].description === "heavy intensity rain") {
-                wImg.setAttribute("src", "/Users/anas/Desktop/weatherIcons/dist/icons/black/png/256x256/rain.png");
-                wImg.classList.add("wImgActive")
-            }
+            // if (data.weather[0].description === "heavy intensity rain") {
+            //     wImg.setAttribute("src", "/Users/anas/Desktop/weatherIcons/dist/icons/black/png/256x256/rain.png");
+            //     wImg.classList.add("wImgActive")
+            // }
 
 
 
             // night
 
-            if (data.weather[0].description === "broken clouds" || data.weather[0].description === "scattered clouds" || data.weather[0].description === "clear sky" && timeNow > 18) {
-                wImg.setAttribute("src", "/Users/anas/Desktop/weatherIcons/dist/icons/black/png/256x256/nt_mostlycloudy.png");
-                wImg.classList.add("wImgActive")
-            }
+            // if (data.weather[0].description === "broken clouds" || data.weather[0].description === "scattered clouds" || data.weather[0].description === "clear sky" && timeNow > 18) {
+            //     wImg.setAttribute("src", "/Users/anas/Desktop/weatherIcons/dist/icons/black/png/256x256/nt_mostlycloudy.png");
+            //     wImg.classList.add("wImgActive")
+            // }
+
+            wImg.setAttribute("src", "./w.svg");
+            wImg.classList.add("wImgActive")
 
             //location
 
@@ -136,10 +139,10 @@ btn.addEventListener("click", (e) => {
 
 
 
-            if (fTemp < 16) {
-                wImg.setAttribute("src", "/Users/anas/Desktop/weatherIcons/dist/icons/black/png/256x256/snow.png");
-                wImg.classList.add("wImgActive")
-            }
+            // if (fTemp < 16) {
+            //     wImg.setAttribute("src", "/Users/anas/Desktop/weatherIcons/dist/icons/black/png/256x256/snow.png");
+            //     wImg.classList.add("wImgActive")
+            // }
 
 
 
