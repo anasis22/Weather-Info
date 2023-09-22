@@ -45,7 +45,7 @@ btn.addEventListener("click", (e) => {
                 data.weather[0].description === "clear sky" && timeNow > 18 ||
                 fTemp < 16
             ) {
-                wImg.setAttribute("src", "https://www.svgrepo.com/show/520207/weather-forecast.svg");
+                wImg.setAttribute("src", "https://www.svgrepo.com/show/491948/weather-color-moon-cloud-light.svg");
                 wImg.classList.add("wImgActive")
             }
 
