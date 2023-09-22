@@ -45,7 +45,7 @@ btn.addEventListener("click", (e) => {
                 data.weather[0].description === "clear sky" && timeNow > 18 ||
                 fTemp < 16
             ) {
-                wImg.setAttribute("src", "/Users/anas/git-repos/Weather-Info/weather-forecast-svgrepo-com.svg");
+                wImg.setAttribute("src", "/Users/anas/git-repos/Weather-Info/assets/rain.png");
                 wImg.classList.add("wImgActive")
             }
 
