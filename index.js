@@ -28,6 +28,29 @@ btn.addEventListener("click", (e) => {
                 alert('Enter the the valid location to access')
             }
 
+            if (data.weather[0].description === "broken clouds" ||
+                data.weather[0].description === "scattered clouds" ||
+                data.weather[0].description === "clear sky" ||
+                data.weather[0].description === "overcast clouds" ||
+                data.weather[0].description === "few clouds" ||
+                data.weather[0].description === "mist" ||
+                data.weather[0].description === "thunderstorm with light rain" ||
+                data.weather[0].description === "light rain" ||
+                data.weather[0].description === "moderate rain" ||
+                data.weather[0].main === "Rain" ||
+                data.weather[0].main === "Drizzle" ||
+                data.weather[0].description === "heavy intensity rain" ||
+                data.weather[0].description === "broken clouds" ||
+                data.weather[0].description === "scattered clouds" ||
+                data.weather[0].description === "clear sky" && timeNow > 18 ||
+                fTemp < 16
+            ) {
+                wImg.setAttribute("src", "/Users/anas/git-repos/Weather-Info/weather-forecast-svgrepo-com.svg");
+                wImg.classList.add("wImgActive")
+            }
+
+
+
             // if (data.weather[0].description === "broken clouds" || data.weather[0].description === "scattered clouds" || data.weather[0].description === "clear sky") {
             //     wImg.setAttribute("src", "/Users/anas/Desktop/weatherIcons/dist/icons/black/png/256x256/mostlycloudy.png");
             //     wImg.classList.add("wImgActive")
@@ -67,8 +90,7 @@ btn.addEventListener("click", (e) => {
             //     wImg.classList.add("wImgActive")
             // }
 
-            wImg.setAttribute("src", "https://www.svgrepo.com/show/491948/weather-color-moon-cloud-light.svg");
-            wImg.classList.add("wImgActive")
+
 
             //location
 
